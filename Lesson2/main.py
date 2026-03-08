@@ -24,6 +24,13 @@ a3.eat("cheese")
 # Bài 2: Tạo lớp Rectangle với các thuộc tính: length, width.  
 # Tạo phương thức tính diện tích và chu vi của hình chữ nhật. 
 # Test ở file main.py: tạo đối tượng, tính chu vi, diện tích.
+hcn1 = oop.Rectangle(5, 3)
+print(f"Chu vi hình chữ nhật 1: {hcn1.perimeter()}")
+print(f"Diện tích hình chữ nhật 1: {hcn1.area()}")
+
+hc2 = oop.Rectangle(10, 4)
+print(f"Chu vi hình chữ nhật 2: {hc2.perimeter()}")
+print(f"Diện tích hình chữ nhật 2: {hc2.area()}")
 
 # Bài 3: Tạo lớp BankAccount với các thuộc tính: 
             # account_number: số tài khoản 
@@ -34,3 +41,9 @@ a3.eat("cheese")
             # withdraw(amount): rút tiền từ tài khoản
             # display_balance(): hiển thị số dư tài khoản
             # (amount: số tiền nạp/rút theo đơn vị $)
+account1 = oop.BankAccount("123456789", "Nhật Minh", 1000)
+account1.display_balance()
+account1.deposit(500)           # Số dư: $1500
+account1.deposit(-200)          # Số dư: $1500 (nạp thất bại)
+account1.withdraw(1200)         # Số dư: $300
+account1.withdraw(500)          # Số dư: $300 (rút thất bại)
