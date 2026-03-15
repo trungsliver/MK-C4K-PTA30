@@ -58,3 +58,39 @@ Trường học:     {self.school}
             # cập nhật trường học mới vào thuộc tính school
             self.school = new_school
             print(f'Trường học của {self.name} đã được cập nhật.')
+
+# ============= LUYỆN TẬP =============
+class Animal:
+    # Hàm khởi tạo giá trị
+    def __init__ (self, name, species):
+        self.name = name
+        self.species = species
+
+    # Phương thức hiển thị thông tin
+    def show_info(self):
+        print(f'Tên: {self.name}, Loài: {self.species}')
+
+    # Phương thức ăn
+    def eat (self, food:str):
+        print(f'{self.name} đang ăn {food}.')
+
+class Dog(Animal):
+    # Hàm khởi tạo giá trị
+    def __init__ (self, name, species, type):
+        # Gọi hàm khởi tạo từ lớp cha (Animal)
+        super().__init__(name, species)
+        # Thuộc tính riêng của lớp Dog
+        self.type = type
+
+    # Ghi đè (override) phương thức của lớp cha
+    def show_info(self):
+        print(f'''
+========== THÔNG TIN ==========
+Tên: {self.name}
+Loài: {self.species}
+Giống: {self.type}
+=============================== ''')
+        
+    # Phương thức cắn vật thể
+    def bite(self, obj):
+        print(f'{self.name} đang cắn {obj}.')

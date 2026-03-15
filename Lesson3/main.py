@@ -29,3 +29,12 @@ stu2.show_info()
 # Yêu cầu:
 # - Tạo class ở file oop.py
 # - Viết chương trình test tại file main.py
+
+a1 = oop.Animal('Tom', 'Cat')
+a2 = oop.Animal('Jerry', 'Mouse')
+a1.show_info()
+a2.eat('cheese')
+
+dog1 = oop.Dog('Scooby', 'Dog', 'Great Dane')
+dog1.show_info()
+dog1.bite('bone')
