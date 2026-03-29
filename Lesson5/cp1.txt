@@ -1,0 +1,9 @@
+Quy tắc đặt tên folder: [TenLop]_[HoTen]_CP1
+VD: PTA30_DucTrung_CP1
+
+Yêu cầu: trong folder có 2 file: 
+    - main.py 
+    - oop.py
+    - tracnghiem.txt (ghi đáp án trắc nghiệm vào file này)
+
+# Link đề bài: shorturl.at/wuzaq
