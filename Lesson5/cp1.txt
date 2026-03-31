@@ -7,3 +7,12 @@ Yêu cầu: trong folder có 2 file:
     - tracnghiem.txt (ghi đáp án trắc nghiệm vào file này)
 
 # Link đề bài: shorturl.at/wuzaq
+
+Kết quả CP1 
+Vũ Hoàng: 7/10 9/10 = 8
+Minh Tùng: 7/10 8/10 = 7.5
+Nguyên Vũ: 7/10 8/10 = 7.5
+Nhật Minh: 7/10 9/10 = 8
+Đức Anh: 7/10 7/10 = 7
+Trí Thành: 6/10 10/10 = 8
+Hoàng Anh: chưa ktra
