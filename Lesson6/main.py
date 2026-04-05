@@ -7,12 +7,68 @@ from PyQt6 import uic
 # Tạo app (python)
 app = QApplication(sys.argv)
 
+# Khai báo danh sách người dùng dạng: "email:password"
+users = ['admin:123456']
+
 # Mỗi trang gia diện là 1 class riêng biệt
-class MainWindow(QMainWindow):
+class Signup(QMainWindow):
     def __init__(self):
         super().__init__()
         # Lấy file giao diện đã tạo (cùng folder)
         uic.loadUi('signup.ui', self)
+        # Khai báo sự kiện ấn nút Signup
+        self.pushButton_signup.clicked.connect(self.signup_check)
+
+    # Phương thức kiểm tra đăng ký
+    def signup_check(self):
+        # Lấy thông tin từ giao diện
+        username = self.lineEdit_username.text().strip()
+        email = self.lineEdit_email.text().strip()
+        password = self.lineEdit_password.text().strip()
+        confirm = self.lineEdit_confirm.text().strip()
+        checkB = self.checkBox.isChecked()
+
+        # Biến kiểm tra đăng ký
+        check = True
+
+        # Thiếu thông tin
+        if username == '' or email == '' or password == '' or confirm == '' or checkB != True:
+            check = False
+            msg_box('Signup fail', 'Missing information!')
+        # Password và confirm không khớp
+        elif password != confirm:
+            check = False
+            msg_box('Signup fail', 'Password not match!')
+        # Độ dài password >= 6
+        elif len(password) < 6:
+            check = False
+            msg_box('Signup fail', 'Password at least 6 characters!')
+        # Đã tồn tại email trong danh sách users
+        else:
+            # Duyệt danh sách users (cách 2 - chỉ duyệt value)
+            for user in users:
+                # Tách email, password và lưu vào 2 biến
+                stored_email, stored_password = user.split(':')
+                if stored_email == email:
+                    check = False
+                    msg_box('Signup fail', 'Email already exists!')
+                    break
+
+        # kiểm tra xem có đăng ký thành công không
+        if check == True:
+            # Thêm tài khoản vào danh sách users
+            new_acc = f'{email}:{password}'
+            users.append(new_acc)
+            msg_box('Signup success', 'Signup success!')
+            # Chuyển sang trang Login
+            switch_window(Login())
+
+# Mỗi trang gia diện là 1 class riêng biệt
+class Login(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        # Lấy file giao diện đã tạo (cùng folder)
+        uic.loadUi('login.ui', self)
 
 # Hàm hiển thị thông báo
 def msg_box(title, content):
@@ -35,7 +91,7 @@ def switch_window(classw):
 
 # Chạy app
 # Run app
-window = MainWindow()
+window = Signup()
 window.show()
 sys.exit(app.exec())
 

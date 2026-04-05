@@ -31,14 +31,33 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">/* Độ cong của viền */
-border-radius: 20px;
-/* Viền: kích thước - Kiểu - Màu */
-border: 1px solid black;
-/* Màu nền */
-background: rgb(166, 254, 255);
-/* Màu chữ */
-color: black;</string>
+     <string notr="true">/* Trạng thái bình thường */
+QPushButton{
+	/* Chỉnh màu chữ */
+	color: white;
+	/* Chỉnh màu nền */
+	background-color: rgb(255, 142, 62);
+	/* Viền: kích thước - kiểu - màu */
+	border: 1px solid black;
+	/* Độ cong của viền */
+	border-radius: 25px;
+}
+
+/* Trạng thái khi di chuột vào */
+QPushButton:hover{
+	/* Chỉnh màu nền */
+	background-color: rgb(255, 188, 30);
+}
+
+/* Trạng thái khi ấn chuột */
+QPushButton:pressed{
+	/* Chỉnh khoảng cách trên và trái */
+	padding-top: 2px;
+	padding-left: 2px;
+}
+
+
+</string>
     </property>
     <property name="text">
      <string>Login</string>
