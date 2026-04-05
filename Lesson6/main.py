@@ -69,6 +69,30 @@ class Login(QMainWindow):
         super().__init__()
         # Lấy file giao diện đã tạo (cùng folder)
         uic.loadUi('login.ui', self)
+        # Sự kiện ấn nút login
+        self.pushButton_login.clicked.connect(self.login_check)
+
+    # Kiểm tra đăng nhập
+    def login_check(self):
+        # Lấy thông tin từ giao diện
+        email = self.lineEdit_email.text().strip()
+        password = self.lineEdit_password.text().strip()
+        # Biến kiểm tra đăng nhập
+        check = False
+
+        # Kiểm tra đăng nhập
+        for user in users:
+            stored_email, stored_password = user.split(':')
+            if email == stored_email and password == stored_password:
+                check = True
+                break
+        
+        # Kiểm tra đăng nhập
+        if check == True:
+            msg_box('Login success', 'Welcome to my app !!!')
+            switch_window(Signup())
+        else:
+            msg_box('Login fail', 'Email or password is incorrect!')
 
 # Hàm hiển thị thông báo
 def msg_box(title, content):
