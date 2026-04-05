@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="lineEdit_name">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>60</y>
+      <width>311</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="placeholderText">
+     <string>Nhập tên của bạn</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_result">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>160</y>
+      <width>291</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Kết quả: </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>280</y>
+      <width>281</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* Trạng thái bình thường */
+QPushButton{
+	/* Chỉnh màu chữ */
+	color: white;
+	/* Chỉnh màu nền */
+	background-color: rgb(255, 142, 62);
+	/* Viền: kích thước - kiểu - màu */
+	border: 1px solid black;
+	/* Độ cong của viền */
+	border-radius: 25px;
+}
+
+/* Trạng thái khi di chuột vào */
+QPushButton:hover{
+	/* Chỉnh màu nền */
+	background-color: rgb(255, 188, 30);
+}
+
+/* Trạng thái khi ấn chuột */
+QPushButton:pressed{
+	/* Chỉnh khoảng cách trên và trái */
+	padding-top: 2px;
+	padding-left: 2px;
+}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Press me !!!</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

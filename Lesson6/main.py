@@ -90,9 +90,27 @@ class Login(QMainWindow):
         # Kiểm tra đăng nhập
         if check == True:
             msg_box('Login success', 'Welcome to my app !!!')
-            switch_window(Signup())
+            switch_window(Test())
         else:
             msg_box('Login fail', 'Email or password is incorrect!')
+
+class Test(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        # Lấy file giao diện đã tạo (cùng folder)
+        uic.loadUi('test.ui', self)
+        # Sự kiện ấn nút 
+        self.pushButton.clicked.connect(self.hihi)
+
+    def hihi(self):
+        # Lấy thông tin từ giao diện
+        name = self.lineEdit_name.text().strip()
+
+        # Kiểm tra thông tin
+        if name == '':
+            msg_box('Error', 'Missing information!')
+        else:
+            msg_box('Hello', f'Hello {name} !!!')
 
 # Hàm hiển thị thông báo
 def msg_box(title, content):
