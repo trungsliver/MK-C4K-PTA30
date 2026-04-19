@@ -1,0 +1,26 @@
+/* Trạng thái bình thường */
+QPushButton {
+	/* Màu nền */
+	background-color: rgb(156, 7, 7);
+	/* Màu chữ */
+	color: white;
+	/* font chữ */
+	font: 75 12pt "Arial";
+	/* Viền: kích thước - loại - màu */
+	border: 2px solid #6e6e6e;
+	/* làm cong viền */
+	border-radius: 10px;
+}
+
+/* Trạng thái khi di chuột vào */
+QPushButton:hover{
+	background-color: #fadede;
+	color: black;
+}
+
+/* Trạng thái khi ấn chuột */
+QPushButton:pressed{
+	/* tăng khoảng cách đến viền */
+	padding-left: 3px;
+	padding-top: 3px;
+}
