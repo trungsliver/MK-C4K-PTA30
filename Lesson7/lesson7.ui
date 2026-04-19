@@ -13,7 +13,1295 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Vertical Layout</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>112</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Trạng thái bình thường */
+QPushButton {
+	/* Màu nền */
+	background-color: rgb(156, 7, 7);
+	/* Màu chữ */
+	color: white;
+	/* font chữ */
+	font: 75 12pt &quot;Arial&quot;;
+	/* Viền: kích thước - loại - màu */
+	border: 2px solid #6e6e6e;
+	/* làm cong viền */
+	border-radius: 10px;
+}
+
+/* Trạng thái khi di chuột vào */
+QPushButton:hover{
+	background-color: #fadede;
+	color: black;
+}
+
+/* Trạng thái khi ấn chuột */
+QPushButton:pressed{
+	/* tăng khoảng cách đến viền */
+	padding-left: 3px;
+	padding-top: 3px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Giới thiệu</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Trạng thái bình thường */
+QPushButton {
+	/* Màu nền */
+	background-color: rgb(156, 7, 7);
+	/* Màu chữ */
+	color: white;
+	/* font chữ */
+	font: 75 12pt &quot;Arial&quot;;
+	/* Viền: kích thước - loại - màu */
+	border: 2px solid #6e6e6e;
+	/* làm cong viền */
+	border-radius: 10px;
+}
+
+/* Trạng thái khi di chuột vào */
+QPushButton:hover{
+	background-color: #fadede;
+	color: black;
+}
+
+/* Trạng thái khi ấn chuột */
+QPushButton:pressed{
+	/* tăng khoảng cách đến viền */
+	padding-left: 3px;
+	padding-top: 3px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Trang chủ</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Trạng thái bình thường */
+QPushButton {
+	/* Màu nền */
+	background-color: rgb(156, 7, 7);
+	/* Màu chữ */
+	color: white;
+	/* font chữ */
+	font: 75 12pt &quot;Arial&quot;;
+	/* Viền: kích thước - loại - màu */
+	border: 2px solid #6e6e6e;
+	/* làm cong viền */
+	border-radius: 10px;
+}
+
+/* Trạng thái khi di chuột vào */
+QPushButton:hover{
+	background-color: #fadede;
+	color: black;
+}
+
+/* Trạng thái khi ấn chuột */
+QPushButton:pressed{
+	/* tăng khoảng cách đến viền */
+	padding-left: 3px;
+	padding-top: 3px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Sản phẩm</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Trạng thái bình thường */
+QPushButton {
+	/* Màu nền */
+	background-color: rgb(156, 7, 7);
+	/* Màu chữ */
+	color: white;
+	/* font chữ */
+	font: 75 12pt &quot;Arial&quot;;
+	/* Viền: kích thước - loại - màu */
+	border: 2px solid #6e6e6e;
+	/* làm cong viền */
+	border-radius: 10px;
+}
+
+/* Trạng thái khi di chuột vào */
+QPushButton:hover{
+	background-color: #fadede;
+	color: black;
+}
+
+/* Trạng thái khi ấn chuột */
+QPushButton:pressed{
+	/* tăng khoảng cách đến viền */
+	padding-left: 3px;
+	padding-top: 3px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Tài khoản</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>10</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Horizontal Layout</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>50</y>
+      <width>581</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton_7">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Trạng thái bình thường */
+QPushButton {
+	/* Màu nền */
+	background-color: rgb(156, 7, 7);
+	/* Màu chữ */
+	color: white;
+	/* font chữ */
+	font: 75 12pt &quot;Arial&quot;;
+	/* Viền: kích thước - loại - màu */
+	border: 2px solid #6e6e6e;
+	/* làm cong viền */
+	border-radius: 10px;
+}
+
+/* Trạng thái khi di chuột vào */
+QPushButton:hover{
+	background-color: #fadede;
+	color: black;
+}
+
+/* Trạng thái khi ấn chuột */
+QPushButton:pressed{
+	/* tăng khoảng cách đến viền */
+	padding-left: 3px;
+	padding-top: 3px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Trang chủ</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Trạng thái bình thường */
+QPushButton {
+	/* Màu nền */
+	background-color: rgb(156, 7, 7);
+	/* Màu chữ */
+	color: white;
+	/* font chữ */
+	font: 75 12pt &quot;Arial&quot;;
+	/* Viền: kích thước - loại - màu */
+	border: 2px solid #6e6e6e;
+	/* làm cong viền */
+	border-radius: 10px;
+}
+
+/* Trạng thái khi di chuột vào */
+QPushButton:hover{
+	background-color: #fadede;
+	color: black;
+}
+
+/* Trạng thái khi ấn chuột */
+QPushButton:pressed{
+	/* tăng khoảng cách đến viền */
+	padding-left: 3px;
+	padding-top: 3px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Giới thiệu</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Trạng thái bình thường */
+QPushButton {
+	/* Màu nền */
+	background-color: rgb(156, 7, 7);
+	/* Màu chữ */
+	color: white;
+	/* font chữ */
+	font: 75 12pt &quot;Arial&quot;;
+	/* Viền: kích thước - loại - màu */
+	border: 2px solid #6e6e6e;
+	/* làm cong viền */
+	border-radius: 10px;
+}
+
+/* Trạng thái khi di chuột vào */
+QPushButton:hover{
+	background-color: #fadede;
+	color: black;
+}
+
+/* Trạng thái khi ấn chuột */
+QPushButton:pressed{
+	/* tăng khoảng cách đến viền */
+	padding-left: 3px;
+	padding-top: 3px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Tài khoản</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_8">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Trạng thái bình thường */
+QPushButton {
+	/* Màu nền */
+	background-color: rgb(156, 7, 7);
+	/* Màu chữ */
+	color: white;
+	/* font chữ */
+	font: 75 12pt &quot;Arial&quot;;
+	/* Viền: kích thước - loại - màu */
+	border: 2px solid #6e6e6e;
+	/* làm cong viền */
+	border-radius: 10px;
+}
+
+/* Trạng thái khi di chuột vào */
+QPushButton:hover{
+	background-color: #fadede;
+	color: black;
+}
+
+/* Trạng thái khi ấn chuột */
+QPushButton:pressed{
+	/* tăng khoảng cách đến viền */
+	padding-left: 3px;
+	padding-top: 3px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Sản phẩm</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>170</y>
+      <width>478</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="pushButton_10">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Trạng thái bình thường */
+QPushButton {
+	/* Màu nền */
+	background-color: rgb(156, 7, 7);
+	/* Màu chữ */
+	color: white;
+	/* font chữ */
+	font: 75 12pt &quot;Arial&quot;;
+	/* Viền: kích thước - loại - màu */
+	border: 2px solid #6e6e6e;
+	/* làm cong viền */
+	border-radius: 10px;
+}
+
+/* Trạng thái khi di chuột vào */
+QPushButton:hover{
+	background-color: #fadede;
+	color: black;
+}
+
+/* Trạng thái khi ấn chuột */
+QPushButton:pressed{
+	/* tăng khoảng cách đến viền */
+	padding-left: 3px;
+	padding-top: 3px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Giới thiệu</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_9">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Trạng thái bình thường */
+QPushButton {
+	/* Màu nền */
+	background-color: rgb(156, 7, 7);
+	/* Màu chữ */
+	color: white;
+	/* font chữ */
+	font: 75 12pt &quot;Arial&quot;;
+	/* Viền: kích thước - loại - màu */
+	border: 2px solid #6e6e6e;
+	/* làm cong viền */
+	border-radius: 10px;
+}
+
+/* Trạng thái khi di chuột vào */
+QPushButton:hover{
+	background-color: #fadede;
+	color: black;
+}
+
+/* Trạng thái khi ấn chuột */
+QPushButton:pressed{
+	/* tăng khoảng cách đến viền */
+	padding-left: 3px;
+	padding-top: 3px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Tài khoản</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_13">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Trạng thái bình thường */
+QPushButton {
+	/* Màu nền */
+	background-color: rgb(156, 7, 7);
+	/* Màu chữ */
+	color: white;
+	/* font chữ */
+	font: 75 12pt &quot;Arial&quot;;
+	/* Viền: kích thước - loại - màu */
+	border: 2px solid #6e6e6e;
+	/* làm cong viền */
+	border-radius: 10px;
+}
+
+/* Trạng thái khi di chuột vào */
+QPushButton:hover{
+	background-color: #fadede;
+	color: black;
+}
+
+/* Trạng thái khi ấn chuột */
+QPushButton:pressed{
+	/* tăng khoảng cách đến viền */
+	padding-left: 3px;
+	padding-top: 3px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Sản phẩm</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_11">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Trạng thái bình thường */
+QPushButton {
+	/* Màu nền */
+	background-color: rgb(156, 7, 7);
+	/* Màu chữ */
+	color: white;
+	/* font chữ */
+	font: 75 12pt &quot;Arial&quot;;
+	/* Viền: kích thước - loại - màu */
+	border: 2px solid #6e6e6e;
+	/* làm cong viền */
+	border-radius: 10px;
+}
+
+/* Trạng thái khi di chuột vào */
+QPushButton:hover{
+	background-color: #fadede;
+	color: black;
+}
+
+/* Trạng thái khi ấn chuột */
+QPushButton:pressed{
+	/* tăng khoảng cách đến viền */
+	padding-left: 3px;
+	padding-top: 3px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Trang chủ</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>130</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Frame</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>280</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Grid Layout</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>320</y>
+      <width>220</width>
+      <height>276</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="1" column="0">
+      <widget class="QPushButton" name="pushButton_25">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nunito Sans Normal ExtraBold</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: grey;</string>
+       </property>
+       <property name="text">
+        <string>7</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="pushButton_30">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nunito Sans Normal ExtraBold</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black;
+background-color: rgb(216, 216, 216);</string>
+       </property>
+       <property name="text">
+        <string>%</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="pushButton_31">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nunito Sans Normal ExtraBold</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black;
+background-color: rgb(216, 216, 216);</string>
+       </property>
+       <property name="text">
+        <string>AC</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QPushButton" name="pushButton_32">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nunito Sans Normal ExtraBold</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: grey;</string>
+       </property>
+       <property name="text">
+        <string>3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="pushButton_33">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nunito Sans Normal ExtraBold</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: grey;</string>
+       </property>
+       <property name="text">
+        <string>5</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QPushButton" name="pushButton_34">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nunito Sans Normal ExtraBold</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: rgb(255, 178, 89)</string>
+       </property>
+       <property name="text">
+        <string>x</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QPushButton" name="pushButton_35">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nunito Sans Normal ExtraBold</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: rgb(255, 178, 89)</string>
+       </property>
+       <property name="text">
+        <string>/</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="pushButton_36">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nunito Sans Normal ExtraBold</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: grey;</string>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QPushButton" name="pushButton_37">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nunito Sans Normal ExtraBold</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: rgb(255, 178, 89)</string>
+       </property>
+       <property name="text">
+        <string>+</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QPushButton" name="pushButton_38">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nunito Sans Normal ExtraBold</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: rgb(255, 178, 89)</string>
+       </property>
+       <property name="text">
+        <string>-</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="pushButton_39">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nunito Sans Normal ExtraBold</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: grey;</string>
+       </property>
+       <property name="text">
+        <string>4</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QPushButton" name="pushButton_40">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nunito Sans Normal ExtraBold</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: grey;</string>
+       </property>
+       <property name="text">
+        <string>6</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="pushButton_41">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nunito Sans Normal ExtraBold</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: grey;</string>
+       </property>
+       <property name="text">
+        <string>8</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="pushButton_42">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nunito Sans Normal ExtraBold</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: grey;</string>
+       </property>
+       <property name="text">
+        <string>9</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="pushButton_43">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nunito Sans Normal ExtraBold</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: grey;</string>
+       </property>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="pushButton_44">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nunito Sans Normal ExtraBold</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black;
+background-color: rgb(216, 216, 216);</string>
+       </property>
+       <property name="text">
+        <string>DEL</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QPushButton" name="pushButton_45">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nunito Sans Normal ExtraBold</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: grey;</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QPushButton" name="pushButton_46">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nunito Sans Normal ExtraBold</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: grey;</string>
+       </property>
+       <property name="text">
+        <string>pi</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QPushButton" name="pushButton_47">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nunito Sans Normal ExtraBold</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: grey;</string>
+       </property>
+       <property name="text">
+        <string>.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QPushButton" name="pushButton_48">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nunito Sans Normal ExtraBold</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: rgb(255, 178, 89)</string>
+       </property>
+       <property name="text">
+        <string>=</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
  </widget>
  <resources/>
  <connections/>
