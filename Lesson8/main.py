@@ -18,6 +18,8 @@ class MainWindow(QMainWindow):
         self.spinBox_film2.valueChanged.connect(self.update_price)
         self.spinBox_popcorn.valueChanged.connect(self.update_price)
         self.spinBox_luckyBox.valueChanged.connect(self.update_price)
+        # Sự kiện ấn nút checkout
+        self.pushButton_checkout.clicked.connect(self.checkout)
 
     # Phương thức cập nhật số tiền khi thay đổi số lượng vé
     def update_price(self):
@@ -38,6 +40,10 @@ class MainWindow(QMainWindow):
         # Hiển thị total lên lineEdit
         self.lineEdit_total.setText(str(total) + " VNĐ")
 
+    # Phương thức xử lý checkout
+    def checkout(self):
+        # hiện thông báo
+        msg_box('Thanh toán thành công', f'Số tiền: {self.lineEdit_total.text()}')
 
 # Hàm hiển thị thông báo
 def msg_box(title, content):
