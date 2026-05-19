@@ -1,0 +1,20 @@
+Quy tắc đặt tên folder: [TenLop]_[HoTen]_CP2
+VD: PTA30_DucTrung_CP2
+
+Yêu cầu: trong folder có các file: 
+    - main.py 
+    - file1.ui
+    - file2.ui
+    - tracnghiem.txt (ghi đáp án trắc nghiệm vào file này)
+
+# Link đề bài: shorturl.at/uEl5F
+
+Kết quả: 
+Vũ Hoàng: 6/10 8/10 = 7
+Bảo Lam : 7/10 10/10 = 8.5
+Đức Anh: 6/10 8/10 = 7
+Minh Tùng: 7/10 8/10 = 7.5
+Nguyên Vũ: 7/10 8/10 = 7.5
+Nhật Minh: 6/10 7/10 = 6.5
+Trí Thành: 7/10 9/10 = 8
+Hoàng Anh: 6/10 7/10 = 6.5
