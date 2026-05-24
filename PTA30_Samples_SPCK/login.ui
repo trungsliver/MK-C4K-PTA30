@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginWindow</class>
+
+ <widget class="QMainWindow" name="LoginWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>700</height>
+   </rect>
+  </property>
+
+  <property name="windowTitle">
+   <string>Login</string>
+  </property>
+
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+
+    <!-- NAVBAR -->
+    <item>
+     <widget class="QFrame" name="navbar">
+      <property name="styleSheet">
+       <string>
+QFrame{
+    background-color:#1C1C1E;
+    border-radius:15px;
+}
+
+QPushButton{
+    background-color:#2C2C2E;
+    color:white;
+    border:none;
+    border-radius:10px;
+    padding:10px;
+    font-size:16px;
+}
+
+QPushButton:hover{
+    background-color:#FF9500;
+}
+
+QPushButton:pressed{
+    background-color:#cc7700;
+}
+       </string>
+      </property>
+
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="btnCalculatorNav">
+         <property name="text">
+          <string>Calculator</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QPushButton" name="btnLoginNav">
+         <property name="text">
+          <string>Login</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QPushButton" name="btnSignupNav">
+         <property name="text">
+          <string>Signup</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+
+    <!-- LOGIN -->
+    <item>
+     <widget class="QFrame" name="mainFrame">
+      <property name="styleSheet">
+       <string>
+QFrame{
+    background-color:#2C2C2E;
+    border-radius:25px;
+}
+
+QLabel{
+    color:white;
+    font-size:16px;
+}
+
+QLineEdit{
+    background-color:#1C1C1E;
+    color:white;
+    border:2px solid #3A3A3C;
+    border-radius:12px;
+    padding:12px;
+    font-size:15px;
+}
+
+QLineEdit:focus{
+    border:2px solid #FF9500;
+}
+
+QPushButton{
+    background-color:#FF9500;
+    color:white;
+    border:none;
+    border-radius:15px;
+    padding:14px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+QPushButton:hover{
+    background-color:#ffaa33;
+}
+
+QPushButton:pressed{
+    background-color:#cc7700;
+}
+       </string>
+      </property>
+
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+
+       <item>
+        <widget class="QLabel" name="labelTitle">
+         <property name="text">
+          <string>LOGIN</string>
+         </property>
+
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QLineEdit" name="emailInput">
+         <property name="placeholderText">
+          <string>Enter email</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QLineEdit" name="passwordInput">
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+
+         <property name="placeholderText">
+          <string>Enter password</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QPushButton" name="loginButton">
+         <property name="text">
+          <string>Login</string>
+         </property>
+        </widget>
+       </item>
+
+      </layout>
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
